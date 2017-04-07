@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="col-md-10 col-md-offset-1">
+        <div>
+
+            <div >
+                <img src="~/Images/Logo.jpeg" style="width:200px;height:80px;background-color:black" />
+            </div>
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Carz Auto Dealer</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="Home">Home</a></li>
+                        <li><a href="ContactUs">Contact Us</a></li>
+                        <li><a href="VehicleForSale">Vehicles For Sale</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        @RenderBody()
+
+
+
+        <footer>
+            <div class="container col-md-12" style="width:100%;height:100px;background-color:darkgray;padding-top:15px;">
+                <p><h1><b>&copy; www.Carz.com</b></h1></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
